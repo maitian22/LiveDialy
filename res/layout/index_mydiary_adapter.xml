@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content" >
+
+    <RelativeLayout
+        android:id="@+id/time_view"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="#02a1a5" >
+
+        <TextView
+            android:id="@+id/date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingBottom="5dp"
+            android:paddingLeft="10dp"
+            android:paddingTop="5dp"
+            android:text="8月10日,2013"
+            android:textColor="@color/white"
+            android:textSize="14dp" />
+
+        <TextView
+            android:id="@+id/week"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:paddingBottom="5dp"
+            android:paddingRight="10dp"
+            android:paddingTop="5dp"
+            android:text="星期六"
+            android:textColor="@color/white"
+            android:textSize="14dp" />
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/sanjiao"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@id/time_view"
+        android:layout_marginRight="10dp"
+        android:background="@drawable/wdrl_sanjiao" />
+
+    <RelativeLayout
+        android:id="@+id/content_view"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/time_view"
+        android:paddingBottom="15dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:paddingTop="15dp" >
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="李宇春演唱会北京站"
+            android:textColor="#434343"
+            android:textSize="20dp" />
+
+        <TextView
+            android:id="@+id/time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/title"
+            android:text="2012.7-2.12.8"
+            android:textColor="#464646"
+            android:textSize="16dp" />
+		<ImageView
+		    android:id="@+id/naozhong"
+            android:layout_width="12dp"
+            android:layout_height="12dp"
+            android:layout_below="@id/title"
+            android:layout_marginTop="3dp"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@id/time"
+            android:background="@drawable/nz_btn" />
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/jr_b_btn" />
+    </RelativeLayout>
+
+</RelativeLayout>

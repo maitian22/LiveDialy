@@ -1,0 +1,10 @@
+<resources>
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">10dp</dimen>
+    <dimen name="activity_my_info_margin_left">30dp</dimen>
+    <dimen name="activity_my_info_margin_right">20dp</dimen>
+	<dimen name="activity_my_info_margin_top">10dp</dimen>
+	<dimen name="activity_my_info_edittext_margin_left">40dp</dimen>
+	<dimen name="activity_setting_text_size">20dp</dimen>
+	<dimen name="activity_setting_text_margin">15dp</dimen>
+</resources>

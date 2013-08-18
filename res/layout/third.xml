@@ -1,0 +1,245 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+    <include
+        android:id="@+id/head_view"
+        layout="@layout/top_layout" />
+
+    <include
+        android:id="@+id/buttom_view"
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        layout="@layout/buttom_layout" />
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@id/head_view"
+        android:layout_above="@id/buttom_view"
+        >
+
+        <RelativeLayout
+            android:id="@+id/account_bg"
+            android:layout_width="fill_parent"
+            android:layout_height="220dp"
+            android:layout_below="@id/title"
+            android:background="@color/grey" >
+
+            <ImageView
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="20dp"
+                android:src="@color/half_white" />
+
+            <ImageView
+                android:id="@+id/head_portrait"
+                android:layout_width="66dp"
+                android:layout_height="66dp"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="27dp"  
+                android:background="@color/black" />
+
+            <TextView
+                android:id="@+id/nick_name_disp"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/head_portrait"
+                android:gravity="center"
+                android:paddingTop="@dimen/activity_vertical_margin"
+                android:text="利莎-GAO"
+                android:textColor="@color/black"
+                android:textSize="20dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/brief_intro_disp"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/nick_name_disp"
+                android:ellipsize="end"
+                android:gravity="right"
+                android:paddingLeft="55dp"
+                android:paddingRight="55dp"
+                android:paddingTop="4dp"
+                android:singleLine="true"
+                android:text="你曾经缺失的东西，会有人慢慢找回"
+                android:textSize="16dp" />
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="59dp"
+                android:layout_alignParentBottom="true"
+                android:background="@color/half_black"
+                android:orientation="horizontal" >
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="2dp"
+                    android:layout_weight="1"
+                    android:orientation="horizontal" >
+
+                    <LinearLayout
+                        android:id="@+id/my_rount_linear"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="vertical" >
+
+                        <TextView
+                            android:id="@+id/rount_list_number"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center_horizontal"
+                            android:text="58"
+                            android:textColor="@color/white"
+                            android:textSize="25dp" />
+
+                        <TextView
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center_horizontal"
+                            android:text="行程单"
+                            android:textSize="12dp"
+                            android:textColor="@color/white" />
+
+                        <ImageView
+                            android:id="@+id/my_rount_arrow"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_horizontal"
+                            android:background="@drawable/gray_jt_btn" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/my_attation_linear"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="vertical" >
+
+                        <TextView
+                            android:id="@+id/attation_number"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center_horizontal"
+                            android:text="169"
+                            android:textColor="@color/white"
+                            android:textSize="25dp" />
+
+                        <TextView
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center_horizontal"
+                            android:text="关注"
+                            android:textSize="12dp"
+                            android:textColor="@color/white" />
+
+                        <ImageView
+                            android:id="@+id/my_attation_arrow"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_horizontal"
+                            android:background="@drawable/white_jt_btn"
+                            android:visibility="invisible" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/my_fans_linear"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="vertical" >
+
+                        <TextView
+                            android:id="@+id/fans_number"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center_horizontal"
+                            android:text="207"
+                            android:textColor="@color/white"
+                            android:textSize="25dp" />
+
+                        <TextView
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center_horizontal"
+                            android:text="粉丝"
+                            android:textSize="12dp"
+                            android:textColor="@color/white" />
+
+                        <ImageView
+                            android:id="@+id/my_fans_arrow"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_horizontal"
+                            android:background="@drawable/white_jt_btn"
+                            android:visibility="invisible" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="1dp"
+                    android:layout_height="fill_parent"
+                    android:background="@color/white" />
+
+                <LinearLayout
+                    android:id="@+id/my_info_linear"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:layout_weight="4"
+                    android:orientation="vertical" >
+
+                    <ImageView
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="0dp"
+                        android:gravity="center_horizontal"
+                        android:src="@drawable/zl_ta_btn" />
+
+                    <ImageView
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="6dp"
+                        android:src="@drawable/zl_jt_btn" />
+
+                    <ImageView
+                        android:id="@+id/my_info_arrow"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginTop="4dp"
+                        android:background="@drawable/white_jt_btn"
+                        android:visibility="invisible" />
+                </LinearLayout>
+            </LinearLayout>
+        </RelativeLayout>
+
+        <LinearLayout
+            android:id="@+id/arrow_bg"
+            android:layout_width="fill_parent"
+            android:layout_height="5dp"
+            android:layout_below="@id/account_bg"
+            android:background="@color/white" />
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_below="@id/arrow_bg" >
+
+            <include layout="@layout/my_rount"/>  
+
+            <include layout="@layout/my_attation"/>
+
+            <include layout="@layout/my_fans"/>
+
+            <include layout="@layout/my_info"/>
+        </RelativeLayout>
+    </RelativeLayout>
+
+</RelativeLayout>

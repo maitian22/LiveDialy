@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="grey">#26000000</color>
+    <color name="half_white">#c0ffffff</color>
+    <color name="black">#000000</color>
+    <color name="half_black">#cc000000</color>
+    <color name="white">#ffffffff</color>
+    <color name="arrow_bg">#e5e5e5</color>
+    <color name="rount_list_title_color">#434343</color>
+    <color name="rount_list_num_color">#2b5e89</color>
+    <color name="rount_list_introduce_color">#464646</color>
+    <color name="black_percent_20">#33000000</color>
+    <color name="white_percent_20">#33ffffff</color>
+    <color name="my_info_edit_button">#438fd9</color>
+    <color name="black_percent_85">#d9000000</color>
+    <color name="show_pic_dialog_bg">#1e1518</color>
+    <color name="my_buddy_footer_color">#666666</color>
+    <color name="green">#81c04b</color>
+    <color name="button_grey">#bcbcbc</color>
+    <color name="transparent">#00000000</color>
+    <color name="red_line">#f1f1f1</color>
+    <color name="login_laifu">#f29600</color>
+    <color name="viewfinder_frame">#ff000000</color>
+    <color name="viewfinder_laser">#ffff0000</color>
+    <color name="viewfinder_mask">#60000000</color>
+    <color name="header">#58567D</color>
+    <color name="grgray">#686868</color>
+    <color name="jumeired">#ed145b</color>
+	<color name="result_view">#b0000000</color>
+	<color name="possible_result_points">#c0ffff00</color>  
+</resources>

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="60dp"
+    android:gravity="center_horizontal" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" >
+
+        <RelativeLayout
+            android:id="@+id/second_view"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="7"
+            android:background="@drawable/xdh_fx_on_btn" >
+        </RelativeLayout>
+		
+        <RelativeLayout
+            android:id="@+id/index_view"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="6"
+            android:background="@drawable/xdh_lf_off_btn" >
+        </RelativeLayout>
+        
+        <RelativeLayout
+            android:id="@+id/third_view"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="7"
+            android:background="@drawable/xdh_me_off_btn" >
+        </RelativeLayout>
+    </LinearLayout>
+
+</RelativeLayout>

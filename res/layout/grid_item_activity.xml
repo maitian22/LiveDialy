@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <include
+        android:id="@+id/head_view"
+        layout="@layout/top_layout" />
+
+    <LinearLayout
+        android:id="@+id/mheadline"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/head_view"
+        android:background="@color/arrow_bg"
+        android:paddingBottom="12dp"
+        android:paddingTop="12dp" >
+
+        <RelativeLayout
+            android:id="@+id/hotest"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" >
+
+            <TextView
+                android:id="@+id/hot_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:background="@drawable/grid_item_shape"
+                android:gravity="center"
+                android:text="热门"
+                android:textColor="@color/half_black"
+                android:textSize="15dp" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/latest"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" >
+
+            <TextView
+                android:id="@+id/latest_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:gravity="center"
+                android:textColor="@color/half_black"
+                android:text="最新"
+                android:textSize="15dp" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/nearby"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" >
+
+            <TextView
+                android:id="@+id/nearby_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:gravity="center"
+                android:textColor="@color/half_black"
+                android:text="附近"
+                android:textSize="15dp" />
+        </RelativeLayout>
+    </LinearLayout>
+	<ListView 
+        android:id="@+id/my_list"
+        android:layout_below="@id/mheadline"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        />
+</RelativeLayout>

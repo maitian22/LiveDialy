@@ -1,0 +1,302 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+    <include
+        android:id="@+id/head_view"
+        layout="@layout/top_layout" />
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@id/head_view" >
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_below="@id/head_view"
+            android:background="@color/grey" >
+
+            <RelativeLayout
+                android:id="@+id/white_bg_layout"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginLeft="10dp"  
+                android:background="@color/white" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="15dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="15dp"
+                    android:text="通知声音提醒"
+                    android:textSize="@dimen/activity_setting_text_size" />
+
+                <ImageView
+                    android:id="@+id/notification_switch"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_margin="@dimen/activity_my_info_margin_top"
+                    android:background="@drawable/ic_checkbox_checked1" />
+
+                <LinearLayout
+                    android:id="@+id/mline"
+                    android:layout_width="fill_parent"
+                    android:layout_height="2dp"
+                    android:layout_below="@id/notification_switch"
+                    android:background="@color/grey" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/mline"
+                    android:layout_marginBottom="15dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="15dp"
+                    android:text="闹钟声音提醒"
+                    android:textSize="@dimen/activity_setting_text_size" />
+
+                <ImageView
+                    android:id="@+id/clock_switch"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_below="@id/mline"
+                    android:layout_margin="@dimen/activity_my_info_margin_top"
+                    android:background="@drawable/ic_checkbox_unchecked1" />
+
+                <LinearLayout
+                    android:id="@+id/mline1"
+                    android:layout_width="fill_parent"
+                    android:layout_height="8dp"
+                    android:layout_below="@id/clock_switch"
+                    android:background="@color/grey" />
+
+                <RelativeLayout
+                    android:id="@+id/change_password"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/mline1"
+                    android:layout_marginBottom="15dp"
+                    android:layout_marginLeft="@dimen/activity_setting_text_margin"
+                    android:layout_marginRight="@dimen/activity_setting_text_margin"
+                    android:layout_marginTop="15dp" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="修改密码"
+                        android:textSize="@dimen/activity_setting_text_size" />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:background="@drawable/arraw" />
+                </RelativeLayout>
+
+                <LinearLayout
+                    android:id="@+id/mline2"
+                    android:layout_width="fill_parent"
+                    android:layout_height="2dp"
+                    android:layout_below="@id/change_password"
+                    android:background="@color/grey" />
+
+                <RelativeLayout
+                    android:id="@+id/feedback"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/mline2"
+                    android:layout_marginBottom="15dp"
+                    android:layout_marginLeft="@dimen/activity_setting_text_margin"
+                    android:layout_marginRight="@dimen/activity_setting_text_margin"
+                    android:layout_marginTop="15dp" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="意见反馈"
+                        android:textSize="@dimen/activity_setting_text_size" />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:background="@drawable/arraw" />
+                </RelativeLayout>
+
+                <LinearLayout
+                    android:id="@+id/mline3"
+                    android:layout_width="fill_parent"
+                    android:layout_height="2dp"
+                    android:layout_below="@id/feedback"
+                    android:background="@color/grey" />
+
+                <RelativeLayout
+                    android:id="@+id/give_comment"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/mline3"
+                    android:layout_marginBottom="15dp"
+                    android:layout_marginLeft="@dimen/activity_setting_text_margin"
+                    android:layout_marginRight="@dimen/activity_setting_text_margin"
+                    android:layout_marginTop="15dp" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="给来福来个好评吧！"
+                        android:textSize="@dimen/activity_setting_text_size" />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:background="@drawable/arraw" />
+                </RelativeLayout>
+
+                <LinearLayout
+                    android:id="@+id/mline4"
+                    android:layout_width="fill_parent"
+                    android:layout_height="8dp"
+                    android:layout_below="@id/give_comment"
+                    android:background="@color/grey" />
+
+                <RelativeLayout
+                    android:id="@+id/bound_phone"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/mline4" >
+
+                    <ImageView
+                        android:id="@+id/phone_img"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/iphone_0ff_btn" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="@dimen/activity_setting_text_margin"
+                        android:layout_toRightOf="@id/phone_img"
+                        android:text="手机号码"
+                        android:textSize="@dimen/activity_setting_text_size" />
+
+                    <Button
+                        android:id="@+id/bound_phone_btn"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_margin="@dimen/activity_setting_text_margin"
+                        android:background="@drawable/shape_button_blue"
+                        android:text="绑定"
+                        android:textColor="@color/white"
+                        android:textSize="15dp" />
+                </RelativeLayout>
+
+                <LinearLayout
+                    android:id="@+id/mline5"
+                    android:layout_width="fill_parent"
+                    android:layout_height="2dp"
+                    android:layout_below="@id/bound_phone"
+                    android:background="@color/grey" />
+
+                <RelativeLayout
+                    android:id="@+id/bound_sina"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/mline5" >
+
+                    <ImageView
+                        android:id="@+id/sina_img"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/sina_on_btn" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="@dimen/activity_setting_text_margin"
+                        android:layout_toRightOf="@id/sina_img"
+                        android:text="新浪微博"
+                        android:textSize="@dimen/activity_setting_text_size" />
+
+                    <Button
+                        android:id="@+id/bound_sina_btn"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_margin="@dimen/activity_setting_text_margin"
+                        android:background="@drawable/shape_button_grey"
+                        android:text="已绑定"
+                        android:textColor="@color/white"
+                        android:textSize="15dp" />
+                </RelativeLayout>
+
+                <LinearLayout
+                    android:id="@+id/mline6"
+                    android:layout_width="fill_parent"
+                    android:layout_height="2dp"
+                    android:layout_below="@id/bound_sina"
+                    android:background="@color/grey" />
+
+                <RelativeLayout
+                    android:id="@+id/bound_qq"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/mline6" >
+
+                    <ImageView
+                        android:id="@+id/qq_img"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/qq_off_btn" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="@dimen/activity_setting_text_margin"
+                        android:layout_toRightOf="@id/qq_img"
+                        android:text="QQ"
+                        android:textSize="@dimen/activity_setting_text_size" />
+
+                    <Button
+                        android:id="@+id/bound_qq_btn"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_margin="@dimen/activity_setting_text_margin"
+                        android:background="@drawable/shape_button_blue"
+                        android:text="绑定"
+                        android:textColor="@color/white"
+                        android:textSize="15dp" />
+                </RelativeLayout>
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/white_bg_layout"  
+                android:layout_margin="20dp" >
+
+                <Button
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginBottom="10dp"
+                    android:background="@drawable/shape_button_grey"
+                    android:paddingTop="10dp"
+                    android:paddingBottom="10dp"
+                    android:text="切换帐号"
+                    android:textColor="@color/white"
+                    android:textSize="20dp" />
+            </LinearLayout>
+        </RelativeLayout>
+    </ScrollView>
+
+</RelativeLayout>

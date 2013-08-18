@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="159dp"
+    android:layout_height="wrap_content"
+    android:background="@drawable/special_pop_bg"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_marginTop="11dp"
+        android:orientation="vertical" >
+
+        <Button
+            android:id="@+id/btn1"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="3dp"
+            android:layout_marginRight="4dp"
+            android:background="@drawable/black_up"
+            android:gravity="left"
+            android:paddingBottom="10dp"
+            android:paddingLeft="20dp"
+            android:paddingRight="30dp"
+            android:paddingTop="10dp"
+            android:text="成员列表"
+            android:textColor="@color/white"
+            android:textSize="17dp" >
+        </Button>
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="2px"
+            android:id="@+id/line1"
+            android:layout_marginLeft="3dp"
+            android:layout_marginRight="4dp"
+            android:background="@drawable/special_pop_line" />
+
+        <Button
+            android:id="@+id/btn2"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="3dp"
+            android:layout_marginRight="4dp"
+            android:background="@drawable/black_mid"
+            android:gravity="left"
+            android:paddingBottom="10dp"
+            android:paddingLeft="20dp"
+            android:paddingRight="30dp"
+            android:paddingTop="10dp"
+            android:text="二维码"
+            android:textColor="@color/white"
+            android:textSize="17dp" >
+        </Button>
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="2px"
+            android:layout_marginLeft="3dp"
+            android:layout_marginRight="4dp"
+            android:background="@drawable/special_pop_line" />
+
+        <Button
+            android:id="@+id/btn3"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="3dp"
+            android:layout_marginRight="4dp"
+            android:background="@drawable/black_mid"
+            android:drawablePadding="10dp"
+            android:gravity="left"
+            android:paddingBottom="10dp"
+            android:paddingLeft="20dp"
+            android:paddingRight="30dp"
+            android:paddingTop="10dp"
+            android:text="编辑内容"
+            android:textColor="@color/white"
+            android:textSize="17dp" />
+
+        <TextView
+            android:id="@+id/special_pop_line"
+            android:layout_width="fill_parent"
+            android:layout_height="2px"
+            android:layout_marginLeft="3dp"
+            android:layout_marginRight="4dp"
+            android:background="@drawable/special_pop_line" />
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" >
+
+            <Button
+                android:id="@+id/btn4"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="3dp"
+                android:layout_marginLeft="3dp"
+                android:layout_marginRight="4dp"
+                android:background="@drawable/black_down"
+                android:gravity="left"
+                android:paddingBottom="14dp"
+                android:paddingLeft="20dp"
+                android:paddingRight="30dp"
+                android:paddingTop="10dp"
+                android:text="注销行程单"
+                android:textColor="@color/white"
+                android:textSize="17dp" >
+            </Button>
+
+            <ImageView
+                android:layout_width="2px"
+                android:layout_height="40px"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dp"
+                android:background="#eb433a" />
+        </RelativeLayout>
+    </LinearLayout>
+
+</LinearLayout>

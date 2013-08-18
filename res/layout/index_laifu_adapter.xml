@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content" >
+	
+    <TextView android:layout_width="fill_parent"
+	    android:layout_height="18px"
+		android:id="@+id/top_line"
+	    />
+    
+    <RelativeLayout
+        android:layout_below="@id/top_line"
+        android:id="@+id/content_view"
+        android:layout_width="fill_parent"
+        android:background="@color/white"
+        android:layout_height="160dp" >
+
+        <ImageView
+            android:id="@+id/image"
+            android:layout_width="160dp"
+            android:layout_height="160dp" />
+
+        <ImageView
+            android:layout_width="fill_parent"
+            android:layout_height="6px"
+            android:layout_toRightOf="@id/image"
+            android:background="#f1f1f1" />
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_toRightOf="@id/image"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"
+            android:text="李宇春全国演唱会成都站巡演"
+            android:textColor="#434343"
+            android:textSize="20dp" />
+
+        <TextView
+            android:id="@+id/people_num"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/title"
+            android:layout_toRightOf="@id/image"
+            android:paddingLeft="5dp"
+            android:text="55"
+            android:textColor="#2b5e89"
+            android:textSize="15dp" />
+
+        <TextView
+            android:id="@+id/people_num_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/title"
+            android:layout_toRightOf="@id/people_num"
+            android:paddingLeft="2dp"
+            android:text="个成员"
+            android:textColor="#464646"
+            android:textSize="15dp" />
+
+        <TextView
+            android:id="@+id/xingcheng_num"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/title"
+            android:layout_toRightOf="@id/people_num_text"
+            android:paddingLeft="15dp"
+            android:text="155"
+            android:textColor="#2b5e89"
+            android:textSize="15dp" />
+
+        <TextView
+            android:id="@+id/xingcheng_num_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/title"
+            android:layout_toRightOf="@id/xingcheng_num"
+            android:paddingLeft="2dp"
+            android:text="个行程"
+            android:textColor="#464646"
+            android:textSize="15dp" />
+
+        <TextView
+            android:id="@+id/new_num"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/wdrl_red_bg"
+            android:paddingBottom="5dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:paddingTop="5dp"
+            android:text="19个新行程"
+            android:textColor="#ffffff"
+            android:textSize="15dp" />
+    </RelativeLayout>
+	<RelativeLayout android:layout_width="fill_parent"
+	    android:layout_height="wrap_content"
+	    android:layout_marginTop="18px"
+	    android:layout_marginLeft="18px"
+	    android:layout_marginRight="18px"
+	    android:layout_below="@id/content_view"
+	    android:id="@+id/build_view"
+	    android:background="@drawable/wdrl_cjxc_build"
+	    >
+	    <ImageView android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:background="@drawable/icon_more_sina"
+	        android:layout_centerVertical="true"
+	        android:layout_marginLeft="10dp"
+	        android:id="@+id/icon_image"
+	        />
+	    <TextView
+            android:id="@+id/build_text"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:text="绑定新浪微博\n获取更好好友信息"
+            android:layout_toRightOf="@id/icon_image"
+            android:textColor="#ffffff"
+            android:textSize="20dp" />
+	</RelativeLayout>
+	<TextView android:layout_width="fill_parent"
+	    android:layout_height="18px"
+	    android:layout_below="@id/build_view"
+	    />
+</RelativeLayout>
