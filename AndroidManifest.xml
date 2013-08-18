@@ -1,5 +1,5 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.laifu.livecolorful"
+    package="com.laifu.liveDialy"
     android:versionCode="1"
     android:versionName="1.0" >
 
@@ -79,7 +79,7 @@
     <uses-permission android:name="android.permission.VIBRATE" />
 
     <application
-        android:name=".MyApplication"
+        android:name="com.laifu.liveDialy.MyApplication"
         android:icon="@drawable/ic_launcher"
         android:label="@string/app_name"
         android:theme="@style/AppTheme" >
@@ -90,7 +90,7 @@
         </service>
         <!-- 来福模块 -->
         <activity
-            android:name=".LoginActivity"
+            android:name="com.laifu.liveDialy.LoginActivity"
             android:configChanges="orientation|keyboardHidden"
             android:launchMode="singleTask"
             android:screenOrientation="portrait"
@@ -114,7 +114,7 @@
         </activity>
         <!-- 来福模块 -->
         <activity
-            android:name=".IndexActivity"
+            android:name="com.laifu.liveDialy.IndexActivity"
             android:configChanges="orientation|keyboardHidden"
             android:launchMode="singleTask"
             android:screenOrientation="portrait"
@@ -123,7 +123,7 @@
 
         <!-- 发现模块 -->
         <activity
-            android:name=".SecondActivity"
+            android:name="com.laifu.liveDialy.SecondActivity"
             android:configChanges="orientation|keyboardHidden"
             android:launchMode="singleTask"
             android:screenOrientation="portrait"
@@ -131,121 +131,121 @@
 
         <!-- 我的模块 -->
         <activity
-            android:name=".ThirdActivity"
+            android:name="com.laifu.liveDialy.ThirdActivity"
             android:configChanges="orientation|keyboardHidden"
             android:launchMode="singleTask"
             android:screenOrientation="portrait"
             android:windowSoftInputMode="stateAlwaysHidden|adjustPan" />
         <activity
-            android:name=".SettingActivity"
+            android:name="com.laifu.liveDialy.SettingActivity"
             android:configChanges="orientation|keyboardHidden"
             android:launchMode="singleTask"
             android:screenOrientation="portrait"
             android:windowSoftInputMode="stateAlwaysHidden|adjustPan" />
         <activity
-            android:name=".ChangePasswordActivity"
+            android:name="com.laifu.liveDialy.ChangePasswordActivity"
             android:configChanges="orientation|keyboardHidden"
             android:launchMode="singleTask"
             android:screenOrientation="portrait"
             android:windowSoftInputMode="stateAlwaysHidden|adjustPan" />
         <activity
-            android:name=".BoundPhoneActivity"
+            android:name="com.laifu.liveDialy.BoundPhoneActivity"
             android:configChanges="orientation|keyboardHidden"
             android:launchMode="singleTask"
             android:screenOrientation="portrait"
             android:windowSoftInputMode="stateAlwaysHidden|adjustPan" />
         <activity
-            android:name=".XingchengdanDetailActivity"
+            android:name="com.laifu.liveDialy.XingchengdanDetailActivity"
             android:configChanges="orientation|keyboardHidden"
             android:launchMode="singleTask"
             android:screenOrientation="portrait"
             android:windowSoftInputMode="stateAlwaysHidden|adjustPan" />
         <activity
-            android:name=".friendAdviceActivity"
+            android:name="com.laifu.liveDialy.friendAdviceActivity"
             android:configChanges="orientation|keyboardHidden"
             android:launchMode="singleTask"
             android:screenOrientation="portrait"
             android:windowSoftInputMode="stateAlwaysHidden|adjustPan" />
         <activity
-            android:name=".GridItemActivity"
+            android:name="com.laifu.liveDialy.GridItemActivity"
             android:configChanges="orientation|keyboardHidden"
             android:launchMode="singleTask"
             android:screenOrientation="portrait"
             android:windowSoftInputMode="stateAlwaysHidden|adjustPan" />
         <activity
-            android:name=".showNearByActivity"
+            android:name="com.laifu.liveDialy.showNearByActivity"
             android:configChanges="orientation|keyboardHidden"
             android:launchMode="singleTask"
             android:screenOrientation="portrait"
             android:windowSoftInputMode="stateAlwaysHidden|adjustPan" />
         <activity
-            android:name=".ChengyuanliebiaoActivity"
+            android:name="com.laifu.liveDialy.ChengyuanliebiaoActivity"
             android:configChanges="orientation|keyboardHidden"
             android:launchMode="singleTask"
             android:screenOrientation="portrait"
             android:windowSoftInputMode="stateAlwaysHidden|adjustPan" />
         <activity
-            android:name=".EntryLaifuLoginActivity"
+            android:name="com.laifu.liveDialy.EntryLaifuLoginActivity"
             android:configChanges="orientation|keyboardHidden"
             android:launchMode="singleTask"
             android:screenOrientation="portrait"
             android:windowSoftInputMode="stateAlwaysHidden|adjustPan" />
         <activity
-            android:name=".ErweimaActivity"
+            android:name="com.laifu.liveDialy.ErweimaActivity"
             android:configChanges="orientation|keyboardHidden"
             android:launchMode="singleTask"
             android:screenOrientation="portrait"
             android:windowSoftInputMode="stateAlwaysHidden|adjustPan" />
         <activity
-            android:name=".EditXingchengdanActivity"
+            android:name="com.laifu.liveDialy.EditXingchengdanActivity"
             android:configChanges="orientation|keyboardHidden"
             android:launchMode="singleTask"
             android:screenOrientation="portrait"
             android:windowSoftInputMode="stateAlwaysHidden|adjustPan" />
         <activity
-            android:name=".MymapActivity"
+            android:name="com.laifu.liveDialy.MymapActivity"
             android:configChanges="orientation|keyboardHidden"
             android:launchMode="singleTask"
             android:screenOrientation="portrait"
             android:windowSoftInputMode="stateAlwaysHidden|adjustPan" />
         <activity
-            android:name=".XingchengDetailActivity"
+            android:name="com.laifu.liveDialy.XingchengDetailActivity"
             android:configChanges="orientation|keyboardHidden"
             android:launchMode="singleTask"
             android:screenOrientation="portrait"
             android:windowSoftInputMode="stateAlwaysHidden|adjustPan" />
         <activity
-            android:name=".EditXingchengActivity"
+            android:name="com.laifu.liveDialy.EditXingchengActivity"
             android:configChanges="orientation|keyboardHidden"
             android:launchMode="singleTask"
             android:screenOrientation="portrait"
             android:windowSoftInputMode="stateAlwaysHidden|adjustPan" />
         <activity
-            android:name=".FetchPasswordActivity"
+            android:name="com.laifu.liveDialy.FetchPasswordActivity"
             android:configChanges="orientation|keyboardHidden"
             android:launchMode="singleTask"
             android:screenOrientation="portrait"
             android:windowSoftInputMode="stateAlwaysHidden|adjustPan" />
         <activity
-            android:name=".FetchPasswordPathActivity"
+            android:name="com.laifu.liveDialy.FetchPasswordPathActivity"
             android:configChanges="orientation|keyboardHidden"
             android:launchMode="singleTask"
             android:screenOrientation="portrait"
             android:windowSoftInputMode="stateAlwaysHidden|adjustPan" />
         <activity
-            android:name=".zxing.CaptureActivity"
+            android:name="com.laifu.liveDialy.zxing.CaptureActivity"
             android:configChanges="orientation|keyboardHidden"
             android:launchMode="singleTask"
             android:screenOrientation="portrait"
             android:windowSoftInputMode="stateAlwaysHidden|adjustPan" />
         <activity
-            android:name=".wxapi.WXEntryActivity"
+            android:name="com.laifu.liveDialy.wxapi.WXEntryActivity"
             android:configChanges="orientation|keyboardHidden"
             android:launchMode="singleTask"
             android:screenOrientation="portrait"
             android:windowSoftInputMode="stateAlwaysHidden|adjustPan" />
         <activity
-            android:name=".registerLaifuActivity"
+            android:name="com.laifu.liveDialy.registerLaifuActivity"
             android:configChanges="orientation|keyboardHidden"
             android:launchMode="singleTask"
             android:screenOrientation="portrait"

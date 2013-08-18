@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
-<com.laifu.livecolorful.view.PullDownView xmlns:android="http://schemas.android.com/apk/res/android"
+<com.laifu.liveDialy.view.PullDownView xmlns:android="http://schemas.android.com/apk/res/android"
     android:id="@+id/pull_down_view"
     android:layout_width="fill_parent"
     android:layout_height="fill_parent"
     android:orientation="vertical" >
 
-    <com.laifu.livecolorful.view.HeaderView
+    <com.laifu.liveDialy.view.HeaderView
         android:id="@+id/pull_down_headerview"
         android:layout_width="fill_parent"
         android:layout_height="60dip"
@@ -59,7 +59,7 @@
                 android:textColor="@color/my_buddy_footer_color" />
                 </LinearLayout>
         </RelativeLayout>
-    </com.laifu.livecolorful.view.HeaderView>
+    </com.laifu.liveDialy.view.HeaderView>
     <ImageView android:layout_height="1dp" android:layout_width="fill_parent" android:visibility="gone"
 			android:id="@+id/iv_divider" android:background="@color/black"></ImageView>
     <ListView
@@ -75,4 +75,4 @@
         android:focusableInTouchMode="true"
 		android:fastScrollEnabled="true" 
         />
-</com.laifu.livecolorful.view.PullDownView>
+</com.laifu.liveDialy.view.PullDownView>

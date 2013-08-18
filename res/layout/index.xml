@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:panel="http://schemas.android.com/apk/res/com.laifu.livecolorful"
+    xmlns:panel="http://schemas.android.com/apk/res/com.laifu.liveDialy"
     android:layout_width="fill_parent"
-    android:background="#e5e5e5"
-    android:layout_height="fill_parent" >
+    android:layout_height="fill_parent"
+    android:background="#e5e5e5" >
 
     <include
         android:id="@+id/head_view"
@@ -21,9 +21,9 @@
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
         android:layout_below="@id/head_view"
-        android:paddingTop="10dp"
+        android:background="#292929"
         android:paddingBottom="10dp"
-        android:background="#292929" >
+        android:paddingTop="10dp" >
 
         <RelativeLayout
             android:layout_width="wrap_content"
@@ -42,11 +42,10 @@
             <ImageView
                 android:id="@+id/wdrl_image"
                 android:layout_width="wrap_content"
-                android:layout_marginLeft="10dp"
                 android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
                 android:layout_toRightOf="@id/wdrl_text"
                 android:src="@drawable/zk_btn" />
-
         </RelativeLayout>
     </RelativeLayout>
 
@@ -56,8 +55,7 @@
         android:layout_height="fill_parent"
         android:layout_above="@id/buttom_view"
         android:layout_below="@id/mydiary_view"
-        layout="@layout/pull_down_view"
-         />
+        layout="@layout/pull_down_view" />
 
     <LinearLayout
         android:id="@+id/silding1_black"
@@ -156,43 +154,43 @@
                 android:id="@+id/sliding1_listview"
                 android:layout_width="fill_parent"
                 android:layout_height="fill_parent"
+                android:layout_marginTop="10px"
                 android:cacheColorHint="#00000000"
                 android:divider="#00000000"
-                android:layout_marginTop="10px"
                 android:dividerHeight="10px"
                 android:listSelector="#00000000" >
             </ListView>
         </LinearLayout>
     </SlidingDrawer>
-	
-    <com.laifu.livecolorful.view.Panel
+
+    <com.laifu.liveDialy.view.Panel
         android:id="@+id/topPanel"
         android:layout_width="fill_parent"
         android:layout_height="fill_parent"
         android:layout_below="@+id/mydiary_view"
+        android:background="@color/white"
         android:paddingBottom="4dip"
         panel:animationDuration="1000"
         panel:closedHandle="@drawable/wdrl_butom_btn"
         panel:content="@+id/panelContent"
         panel:handle="@+id/panelHandle"
         panel:linearFlying="true"
-         android:background="@color/white"
         panel:openedHandle="@drawable/wdrl_butom_btn"
         panel:position="top" >
 
         <ImageButton
             android:id="@+id/panelHandle"
             android:layout_width="fill_parent"
-            android:src="@drawable/wdrl_butom_btn"
-            android:scaleType="fitXY"
+            android:layout_height="30dp"
             android:background="@color/white"
-            android:layout_height="30dp" />
+            android:scaleType="fitXY"
+            android:src="@drawable/wdrl_butom_btn" />
 
         <LinearLayout
             android:id="@+id/panelContent"
             android:layout_width="fill_parent"
-            android:background="@color/white"
             android:layout_height="fill_parent"
+            android:background="@color/white"
             android:orientation="vertical" >
 
             <ListView
@@ -204,45 +202,43 @@
                 android:dividerHeight="1px"
                 android:listSelector="#00000000" >
             </ListView>
-            
-            <RelativeLayout android:layout_width="fill_parent"
-                android:layout_height="fill_parent"
+
+            <RelativeLayout
                 android:id="@+id/no_wdrl_view"
-                >
-                <TextView android:layout_width="wrap_content"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent" >
+
+                <TextView
+                    android:id="@+id/index_norili_image"
+                    android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="30dp"
+                    android:drawablePadding="10dp"
                     android:drawableTop="@drawable/index_norili_face"
                     android:text="暂无特定行程"
                     android:textColor="#c7c7c7"
-                    android:textSize="20dp"
-                    android:layout_centerHorizontal="true"
-                    android:drawablePadding="10dp"
-                    android:id="@+id/index_norili_image"
-                    android:layout_marginTop="30dp"
-                    />
-                <Button android:layout_width="fill_parent"
-                    android:layout_height="wrap_content"
+                    android:textSize="20dp" />
+
+                <Button
                     android:id="@+id/index_add_xingcheng"
-                    android:background="@drawable/wdrl_cjxc_build"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/index_norili_image"
                     android:layout_marginLeft="50dp"
                     android:layout_marginRight="50dp"
-                    android:text="添加行程"
-                    android:layout_below="@id/index_norili_image"
-                    android:textColor="@color/white"
-                    android:drawableLeft="@drawable/index_norili_addten"
                     android:layout_marginTop="20dp"
-                    android:paddingTop="10dp"
+                    android:background="@drawable/wdrl_cjxc_build"
+                    android:drawableLeft="@drawable/index_norili_addten"
+                    android:gravity="center"
+                    android:paddingBottom="10dp"
                     android:paddingLeft="50dp"
                     android:paddingRight="50dp"
-                    android:paddingBottom="10dp"
-                    android:gravity="center"
-                    android:textSize="20dp"
-                    />
-                
-                
-                
+                    android:paddingTop="10dp"
+                    android:text="添加行程"
+                    android:textColor="@color/white"
+                    android:textSize="20dp" />
             </RelativeLayout>
         </LinearLayout>
-    </com.laifu.livecolorful.view.Panel>
-
+    </com.laifu.liveDialy.view.Panel>
 </RelativeLayout>

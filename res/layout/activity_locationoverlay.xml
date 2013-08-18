@@ -20,7 +20,7 @@
         android:layout_width="fill_parent"
         android:layout_height="fill_parent" >
 
-        <com.laifu.livecolorful.MyLocationMapView
+        <com.laifu.liveDialy.MyLocationMapView
             android:id="@+id/bmapView"
             android:layout_width="fill_parent"
             android:layout_height="fill_parent"

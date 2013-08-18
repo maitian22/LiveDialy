@@ -280,7 +280,7 @@
                 android:background="@color/white"
                 android:padding="10dp" >
 
-                <com.laifu.livecolorful.view.HorizontialListView
+                <com.laifu.liveDialy.view.HorizontialListView
                     android:id="@+id/type_gallery1"
                     android:layout_width="fill_parent"
                     android:layout_height="60dp"
